@@ -1,0 +1,45 @@
+<header class="header mfont">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+
+      <!-- Header Logo Start -->
+      <div class="col">
+        <div class="header-logo">
+          <p style="color: white; font-size: large;display:inline;"><a class="navbar-brand" target="_blank"><img
+                src="./assets/images/logo/logo.svg" alt="">
+            </a>Mercedes-Benz France</p>
+        </div>
+      </div><!-- Header Logo End -->
+
+      <!-- Offcanvas Toggle Start -->
+      <div class="col-auto d-lg-none d-flex align-items-center">
+        <button class="offcanvas-toggle">
+          <span></span>
+        </button>
+      </div>
+      <!-- Offcanvas Toggle End -->
+
+      <!-- Header Links Start -->
+      <div class="header-links col-auto order-lg-3">
+        <a  data-toggle="modal" data-target="#loginSignupModal" data-target-sub="#login">Login</a>
+      </div><!-- Header Links End -->
+
+      <!-- Header Menu Start -->
+      <nav id="main-menu" class="main-menu col-lg-auto order-lg-2">
+        <ul>
+          <li class="has-children"><a routerLink="home">Acceuil</a></li>
+          <li class="has-children"><a routerLink="joblist">Offres d'emploi</a> </li>
+          <li><a>Métiers et Marques</a></li>
+          <li><a routerLink="upload">Autre</a>
+            <ul class="sub-menu">
+              <li><a >About Us</a></li>
+              <li><a >FAQ'S</a></li>
+            </ul>
+          </li>
+          <li><a routerLink="contact">Nous contacter</a></li>
+        </ul>
+      </nav>
+      <!-- Header Menu End -->
+    </div>
+  </div>
+</header>

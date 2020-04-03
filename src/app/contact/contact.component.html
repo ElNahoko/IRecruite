@@ -1,0 +1,78 @@
+<!-- Page Heading Section Start -->
+
+<div class="section section-padding mfont">
+  <div class="container ">
+    <div class="row mb-n5">
+      <div class="carousel-item active">
+        <div class="ag_portfolio_logo">
+          <img src="assets/images/banner/12.png" class="d-block w-100 wrapperr">
+          <div class="ag_portfolio_inform_2">
+            <div class="container">
+              <div class="ag_portfolio_inform">
+                <ol class="breadcrumb">
+                  <li><a href="#">Acceuill</a></li>
+                  <li class="active">Contacter nous</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Page Heading Section End -->
+
+<!-- Contact Section Start -->
+<div class="section section-padding mfont">
+  <div class="container wrapper">
+    <div class="row mb-n5">
+
+      <!-- Contact Map Start -->
+      <div class="col-12 mb-5 mt-4">
+        <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+      </div>
+      <!-- Contact Map End -->
+
+      <!-- Contact Information Start -->
+      <div class="col-lg-3 col-12 mb-5 ml-2">
+        <div class="contact-information">
+          <h5 class="title mb-4">Informations de contact</h5>
+          <ul>
+            <li><i class="fa fa-map-o"></i><span>Maison XX, Route XX, Tours,<br>XXXX-XXXX, France</span></li>
+            <li><i class="fa fa-phone-square"></i><span>+00 000 000 000 000</span></li>
+            <li><i class="fa fa-fax"></i><span>>+00 000 000 000 000</span></li>
+            <li><i class="fa fa-envelope-o"></i><span>adham.baq@gmail.com</span></li>
+          </ul>
+          <div class="contact-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Information End -->
+      <!-- Contact Form Start -->
+      <div class="col-lg-7 col-12 mb-5">
+        <div class="contact-form">
+          <h5 class="title mb-4">Entrer en contact</h5>
+          <form id="contact-form" action="https://demo.hasthemes.com/keller-preview/keller/assets/php/contact-mail.php"
+            method="post">
+            <div class="row mb-n3">
+              <div class="col-md-6 col-12 mb-3"><input type="text" name="name" placeholder="Votre Nom"></div>
+              <div class="col-md-6 col-12 mb-3"><input type="email" name="email" placeholder="Adresse Email"></div>
+              <div class="col-12 mb-3"><textarea name="message" placeholder="Votre Message" rows="4"></textarea></div>
+              <div class="col-12 mb-3"><input class="btn btn-primary px-5" type="submit" value="Envoyer le message"></div>
+            </div>
+          </form>
+          <div class="form-messege"></div>
+        </div>
+      </div>
+      <!-- Contact Form End -->
+
+    </div>
+  </div>
+</div>
+<!-- Contact Section End -->

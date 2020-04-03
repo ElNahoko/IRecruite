@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {font-family: "Daimler CS Light Regular";
+  src: url("./assets/fonts/8f96d0baaefa846de86bb16fd6fcc8f2.eot"); /* IE9*/
+  src: url("./assets/fonts/8f96d0baaefa846de86bb16fd6fcc8f2.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("./assets/fonts/8f96d0baaefa846de86bb16fd6fcc8f2.woff2") format("woff2"), /* chrome、firefox */
+  url("./assets/fonts/8f96d0baaefa846de86bb16fd6fcc8f2.woff") format("woff"), /* chrome、firefox */
+  url("./assets/fonts/8f96d0baaefa846de86bb16fd6fcc8f2.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("./assets/fonts/8f96d0baaefa846de86bb16fd6fcc8f2.svg#Daimler CS Light Regular") format("svg"); /* iOS 4.1- */
+}
+.demo{
+  font-family:"Daimler CS Light Regular" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;}
