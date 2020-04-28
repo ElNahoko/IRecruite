@@ -76,7 +76,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   line-height: 1.2;
   margin-top: 0;
@@ -392,7 +391,7 @@ ul li + li {
 }
 
 .text-primary {
-  color: #007BFF !important;
+  color: #00adee !important;
 }
 
 .text-secondary {
@@ -888,7 +887,6 @@ textarea,
 }
 
 select {
-  margin-top: 23px;
   line-height: 24px;
   display: block;
   width: 100%;
@@ -1988,6 +1986,7 @@ body.offcanvas-open {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: -10px -10px 20px;
+  margin-top: 5px;
 }
 
 .job-list-toolbar p {
@@ -2691,6 +2690,8 @@ body.offcanvas-open {
 .sidebar-widget > .inner {
   padding: 25px;
   border: 1px solid #EDEDED;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .sidebar-widget > .inner > .title {

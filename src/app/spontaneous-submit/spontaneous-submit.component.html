@@ -1,0 +1,162 @@
+<div class="section section-padding mfont">
+  <div class="container ">
+    <div class="row mb-n5">
+      <div class="carousel-item active">
+        <div class="ag_portfolio_logo">
+          <img src="assets/images/banner/12.png" class="d-block w-100 wrapperr">
+          <div class="ag_portfolio_inform_2">
+            <div class="container">
+              <div class="ag_portfolio_inform">
+                <ol class="breadcrumb">
+                  <li><a href="#">Acceuill</a></li>
+                  <li class="active">CANDIDATURE SPONTANÉE</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="ptb05 mfont" id="post-job">
+    <div class="container wrapper">
+      <div class="row">
+        <div class="col-md-12 pt30 mr-3">
+          <h1 style="border-bottom:1px solid #CCC;padding-bottom:3px;"> CANDIDATURE SPONTANÉE </h1><br>
+          <p>Vous êtes invités à créer une fiche avec vos données personnelles, afin que nous puissions vous communiquer
+            toute fonction intéressante.</p>
+          <p>La méthode la plus proactive est de postuler directement pour un emploi qui vous intéresse et nous vous
+            demanderons ensuite de remplir votre fiche personnelle.</p>
+          <p>Si vous ne trouvez aucune fonction intéressante, mais voulez toutefois envoyer une candidature spontanée,
+            alors postulez ici.</p>
+          <h4 style="color: darkgray;">Veuillez entrer vos coordonnées</h4>
+        </div>
+      </div>
+
+      <form class="post-job-resume mt50 ml-3 mb-3 mr-4">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="form-group">
+              <label>Sexe</label>
+              <select>
+                <option value="0"> </option>
+                <option value="1">Homme</option>
+                <option value="2">Femme</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Nom</label>
+              <input  class="form-control" type="text" required>
+            </div>
+
+            <div class="form-group">
+              <label>Prénom</label>
+              <input  class="form-control" type="text" required>
+            </div>
+
+            <div class="form-group">
+              <label>Téléphone</label>
+              <input class="form-control" type="text" required>
+            </div>
+
+            <div class="form-group">
+              <label>E-mail</label>
+              <input class="form-control" type="text" required>
+            </div>
+
+            <div class="form-group">
+              <label>Code postal</label>
+              <input class="form-control" type="text" required>
+            </div>
+
+
+            <div class="form-group">
+              <label>Adresse <span>(Champ facultatif)</span></label>
+              <input class="form-control" type="text" placeholder='par exemple. "Paris, France"'>
+            </div>
+
+            <div class="form-group">
+              <label>Compétences</label>
+              <input class="form-control" type="text" placeholder="Séparez chaque compétence par une virgule" required>
+            </div>
+
+            <div class="form-group">
+              <label> Dans quelle(s) région(s) désirez-vous travailler ? </label>
+              <label><input type="checkbox" /> Tours</label>
+              <label><input type="checkbox" /> Paris</label>
+              <label><input type="checkbox" /> Belfort</label>
+            </div>
+
+            <div class="form-group">
+              <label> Dans quelle(s) marque(s) désirez-vous travailler ? </label>
+              <label><input type="checkbox" /> Fuso</label>
+              <label><input type="checkbox" /> Mercedes</label>
+            </div>
+
+
+            <div class="form-group">
+              <div class="card">
+                <h5 class="card-header">Catégories de fonctions dans lesquelles vous souhaitez travailler</h5>
+                <div class="card-body">
+                  <div class="">
+
+                    <select class="category" value="category.categoryName" [(ngModel)]="selected" name="selected"
+                      (change)="buildServices()">
+                      <option [ngValue]="null" [disabled]="true"> Sélectionnez une catégorie</option>
+                      <option class="select" *ngFor="let category of categories" [value]="category.categoryId">
+                        {{category.categoryName}}
+                      </option>
+                    </select>
+
+                    <select data-placeholder="All Cities" class="services location" value="category.categoryName">
+                      <option selected="selected" style="display:none">Plus vous serez précis(e), mieux nous pourrons
+                        vous aider !</option>
+                      <option *ngFor="let service of services; let i =
+                          index" value="service.serviceId">{{service.serviceName}}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label> Joindre votre CV <span>(obligatoire)</span></label>
+
+              <div class="upload-file-btn">
+                <span><i class="fa fa-upload"></i> Télécharger</span>
+                <input type="file" name="application_attachment" accept=".pdf,.word">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label> Lettre de Motivation <span>(Champ facultatif)</span></label>
+
+              <div class="upload-file-btn">
+                <span><i class="fa fa-upload"></i> Télécharger</span>
+                <input type="file" name="application_attachment" accept=".pdf,.word">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label><input type="checkbox" /> En cochant cette case, vous déclarez explicitement avoir pris
+                connaissance de la politique de protection des données à caractère personnel et consentez dès lors à ce
+                que Réseau BMW France traite les données vous concernant selon les principes et modalités qui y sont
+                définis. -<a style="color: #008B8B;">En savoir plus</a> </label>
+            </div>
+
+
+
+
+            <div class="form-group pt30" style="float: right; position: relative; top: -28px;" id="last">
+              <button class="d-block btn btn-primary">Postulez Maintenant</button>
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </section>
